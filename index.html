@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Exercice 1</title>
+  </head>
+  <body>
+    <button id="btn">Clique moi</button>
+     <input type="text" id="text" name="pseudo" />
+  <script>
+    var numberClick = 0;
+    $('#btn').click(function(){
+      numberClick += +1;
+      $('#text').val(numberClick);
+
+    })
+  </script>
+  </body>
+</html>
